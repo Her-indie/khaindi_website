@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  /*breakpoints */
+  --break-point-sm: 640px;
+  --break-point-md: 768px;
+  --break-point-lg: 1024px;
+  --break-point-xl: 1130x;
+  --break-point-2xl: 1520px;
+
+  /*colors */
+  --color-primary: #260101;
+  --color-secondary: #2e0808; /* 330b01 */
+  --color-accent: #000000;
+  --color-accent-hover: #9ca3af;
+  --color-tertiary: #e2a63b;
+  --color-tertiary-hover: #f4c430;
+
+  /*fonts */
+  --font-primary: "Sometype Mono";
+}
+
+body {
+  @apply font-primary bg-primary text-white leading-relaxed;
+}
+
+.h1 {
+  @apply text-[40px] md:text-[52px] xl:text-[56px] leading-1 
+  tracking-tight font-extrabold;
+}
+
+.h2 {
+  @apply text-[32px] md:text-[36px] xl:text-[38px] leading-[1.15] 
+  tracking-tight font-medium;
+}
+
+.h3 {
+  @apply text-[28px] md:text-[30px] xl:text-[32px] leading-[1.2] 
+  font-medium;
+}
+
+.h4 {
+  @apply text-[22px] md:text-[26px] font-medium leading-snug;
+}
+
+.container {
+  @apply px-[15px];
+}
+
+/* btns */
+.btn {
+  @apply flex items-center justify-center rounded-full cursor-pointer
+  transition-all font-medium h-[56px];
+}
+
+.btn-sm {
+  @apply min-w-[168px] px-5 text-[15px] font-semibold;
+}
+
+.btn-lg {
+  @apply min-w-[200px] px-6;
+}
+
+/* btns color */
+.btn-accent {
+  @apply bg-accent hover:bg-accent-hover;
+}
+
+.btn-tertiary {
+  @apply bg-tertiary hover:bg-tertiary-hover;
+}
+
+.btn-white {
+  @apply bg-white hover:bg-white/90 text-primary;
+}
