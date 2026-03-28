@@ -18,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${sometypeMono.variable} antialiased`}>
+      <body className={`${sometypeMono.variable} antialiased overflow-hidden relative`}>
         <RectangleTransition />
         <PageTransition>
           <div className="flex">
